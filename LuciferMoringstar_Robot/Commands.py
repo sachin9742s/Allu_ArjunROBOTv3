@@ -92,7 +92,7 @@ async def start(bot, message):
                     ],
                     [
                         InlineKeyboardButton('📺 𝚃𝚟 𝚂𝚎𝚛𝚒𝚎𝚜 📺', url=f'https://t.me/TV_VIRISION'),
-                        InlineKeyboardButton(💻📱 𝙾𝚃𝚃 𝙼𝚘𝚟𝚒𝚎𝚜📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
+                        InlineKeyboardButton('💻📱 𝙾𝚃𝚃 𝙼𝚘𝚟𝚒𝚎𝚜📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
                     ]
                     ]
                 await bot.send_cached_media(
