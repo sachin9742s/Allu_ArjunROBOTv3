@@ -84,15 +84,15 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest'),
-                        InlineKeyboardButton('💬Channel', url=f'https://t.me/GD_FILMCLUB')
+                        InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest'),
+                        InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url=f'https://t.me/GD_FILMCLUB')
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔍 𝚂𝚎𝚊𝚛𝚌𝚑 𝙰𝚐𝚊𝚒𝚗 🔎', switch_inline_query_current_chat='')
                     ],
                     [
-                        InlineKeyboardButton('📺 Tv Series 📺', url=f'https://t.me/TV_VIRISION'),
-                        InlineKeyboardButton('💻📱OTT Movies 📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
+                        InlineKeyboardButton('📺 𝚃𝚟 𝚂𝚎𝚛𝚒𝚎𝚜 📺', url=f'https://t.me/TV_VIRISION'),
+                        InlineKeyboardButton(💻📱 𝙾𝚃𝚃 𝙼𝚘𝚟𝚒𝚎𝚜📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -111,7 +111,7 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("📢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 📢", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -123,18 +123,18 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("🗣️ Group", url="https://t.me/KicchaRequest"),
-                InlineKeyboardButton("💻 Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
+                InlineKeyboardButton("🗣️ 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/KicchaRequest"),
+                InlineKeyboardButton("💻 𝙲𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                 ],[
-                InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin")
+                InlineKeyboardButton("🧑‍💻 𝙼𝚢 𝙱𝚘𝚜𝚜", url="https://t.me/sachin_official_admin")
                 ],[
-                InlineKeyboardButton("📁 Channel", url="https://t.me/GD_FILMCLUB"),
-                InlineKeyboardButton("🖥️ Tv Series", url="https://t.me/TV_VIRISION")
+                InlineKeyboardButton("📁 𝙲𝚑𝚊𝚗𝚗𝚎𝚕", url="https://t.me/GD_FILMCLUB"),
+                InlineKeyboardButton("📺 𝚃𝚟 𝚂𝚎𝚛𝚒𝚎𝚜", url="https://t.me/TV_VIRISION")
                 ],[
-                InlineKeyboardButton("🔍 Search Here 🔎", switch_inline_query_current_chat='')
+                InlineKeyboardButton("🔍 𝚂𝚎𝚊𝚛𝚌𝚑 𝙰𝚐𝚊𝚒𝚗 🔎", switch_inline_query_current_chat='')
                 ],[
-                InlineKeyboardButton("🤔 Help", callback_data="help"),
-                InlineKeyboardButton("About 🤠", callback_data="about")
+                InlineKeyboardButton("🤔 𝙷𝚎𝚕𝚙", callback_data="help"),
+                InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 🤠", callback_data="about")
                 ]]
             )
         )
@@ -346,8 +346,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🗣️ Group', url='https://t.me/KicchaRequest'),
-            InlineKeyboardButton('💬 Channel', url=f'https://t.me/GD_FILMCLUB')
+            InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url='https://t.me/KicchaRequest'),
+            InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url=f'https://t.me/GD_FILMCLUB')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
