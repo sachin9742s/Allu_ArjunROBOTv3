@@ -84,10 +84,15 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest'),
+                        InlineKeyboardButton('💬Channel', url=f'https://t.me/GD_FILMCLUB')
                     ],
                     [
                         InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                    ],
+                    [
+                        InlineKeyboardButton('📺 Tv Series 📺', url=f'https://t.me/TV_VIRISION'),
+                        InlineKeyboardButton('💻📱OTT Movies 📱💻', url=f'https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -118,11 +123,16 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
-                InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                InlineKeyboardButton("More Botz", url="https://t.me/MT_Botz")
+                InlineKeyboardButton("🗣️ Group", url="https://t.me/KicchaRequest"),
+                InlineKeyboardButton("💻 Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                 ],[
-                InlineKeyboardButton("Help", callback_data="help"),
-                InlineKeyboardButton("About", callback_data="about")
+                InlineKeyboardButton("🔍 Search Here 🔎", switch_inline_query_current_chat='')
+                ],[
+                InlineKeyboardButton("📁 Channel", url="https://t.me/GD_FILMCLUB"),
+                InlineKeyboardButton("🖥️ Tv Series", url="https://t.me/TV_VIRISION")
+                ],[
+                InlineKeyboardButton("🤔 Help", callback_data="help"),
+                InlineKeyboardButton("About 🤠", callback_data="about")
                 ]]
             )
         )
@@ -334,8 +344,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('More Botz', url='https://t.me/MT_Botz'),
-            InlineKeyboardButton('Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest'),
+            InlineKeyboardButton('Update Channel', url=f'https://t.me/GD_FILMCLUB')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)

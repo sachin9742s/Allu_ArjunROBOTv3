@@ -11,35 +11,47 @@ from .Channel import (
 )
 
 HELP = """
-<u>Basic Commads</u>
+○  it's Note Complicated...🤓
 
-/start : check if am alive or dead
-/about : About Me
+○  Search using inline mode
+This methord works on any chat, Just type @Allu_ArjunROBOT and then leave a space and search any movie you want...
 
-<u>Bot Owner Only</u>
+○ Available Commands
+     
+ Basic Commads
 
-  /broadcast Replay Any Message or Media
-  /stats user Status
-  /ban_user  click ban_user more info
-  /unban_user click unban_user more info
-  /banned_users Banned User Details
-  /total How Many Files Added In Database
-  /logger  Get Logs
-  /delete Delete File From Database
+/start :- check am Alive
 
-[➡️How To Add Old Files For database](https://youtu.be/mtu5hgW-l_o)
+Bot Owner Only
 
-@Mo_Tech_YT
+/broadcast Replay Any Message or Media
+/stats user Status
+/ban_user  click ban_user more info
+/unban_user click unban_user more info
+/banned_users Banned User Details
+/total How Many Files Added In Database
+/logger  Get Logs
+/delete Delete File From Database
+
+○ Notice 📙:-
+
+○Dont Spam Me...🤒
+
+©️MᴀɪɴᴛᴀɪɴᴇD Bʏ :- [SACHIN S](https://t.me/sachin_official_admin)
+
+@KicchaRequest
 """
 
 ABOUT = """
-➥ Name : Auto Filter With IMDB
+➥ Name :  [Allu Arjun RoBot](https://t.me/Allu_ArjunROBOT)
     
-➥ Creator : [Muhammed RK](t.me/Mrk_YT)
+➥ Creator : [Sachin S](https://t.me/sachin_official_admin)
 
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Source Code : [Click Me](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
+➥ Request Group : [Kiccha Request](https://t.me/KicchaRequest)
+
+➥ Movie Channel :  [KICCHA REQUEST Channel](https://t.me/GD_FILMCLUB)
 """
