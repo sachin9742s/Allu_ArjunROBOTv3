@@ -126,6 +126,7 @@ async def start(bot, message):
                 InlineKeyboardButton("🗣️ Group", url="https://t.me/KicchaRequest"),
                 InlineKeyboardButton("💻 Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                 ],[
+                InlineKeyboardButton('🧑‍💻 My Boss', url='https://t.me/sachin_official_admin"),
                 InlineKeyboardButton("🔍 Search Here 🔎", switch_inline_query_current_chat='')
                 ],[
                 InlineKeyboardButton("📁 Channel", url="https://t.me/GD_FILMCLUB"),
@@ -344,8 +345,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Request Group', url='https://t.me/KicchaRequest'),
-            InlineKeyboardButton('Update Channel', url=f'https://t.me/GD_FILMCLUB')
+            InlineKeyboardButton('🗣️ Group', url='https://t.me/KicchaRequest'),
+            InlineKeyboardButton('💬 Channel', url=f'https://t.me/GD_FILMCLUB')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
