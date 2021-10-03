@@ -126,11 +126,12 @@ async def start(bot, message):
                 InlineKeyboardButton("🗣️ Group", url="https://t.me/KicchaRequest"),
                 InlineKeyboardButton("💻 Collection", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                 ],[
-                InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin"),
-                InlineKeyboardButton("🔍 Search Here 🔎", switch_inline_query_current_chat='')
+                InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin")
                 ],[
                 InlineKeyboardButton("📁 Channel", url="https://t.me/GD_FILMCLUB"),
                 InlineKeyboardButton("🖥️ Tv Series", url="https://t.me/TV_VIRISION")
+                ],[
+                InlineKeyboardButton("🔍 Search Here 🔎", switch_inline_query_current_chat='')
                 ],[
                 InlineKeyboardButton("🤔 Help", callback_data="help"),
                 InlineKeyboardButton("About 🤠", callback_data="about")
