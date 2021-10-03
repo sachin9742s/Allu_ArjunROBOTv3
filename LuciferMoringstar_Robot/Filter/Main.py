@@ -275,7 +275,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest')
                 ],
                 [
-                    InlineKeyboardButton('🧑‍💻 My Boss', url='https://t.me/sachin_official_admin"),
+                    InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin"),
                     InlineKeyboardButton("About🤠", callback_data="about")
                 ]
                 ]
@@ -289,7 +289,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton("🤔Help", callback_data="help"),
-                    InlineKeyboardButton('🧑‍💻 My Boss', url='https://t.me/sachin_official_admin")
+                    InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin"),
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
