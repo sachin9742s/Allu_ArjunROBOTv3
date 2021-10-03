@@ -33,7 +33,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=invite_link.invite_link)
+                            InlineKeyboardButton("🤖 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🤖", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -271,12 +271,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('💬 Channel', url='https://t.me/GD_FILMCLUB'),
-                    InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest')
+                    InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/GD_FILMCLUB'),
+                    InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest')
                 ],
                 [
-                    InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin"),
-                    InlineKeyboardButton("About🤠", callback_data="about")
+                    InlineKeyboardButton("🧑‍💻 𝙼𝚢 𝙱𝚘𝚜𝚜", url="https://t.me/sachin_official_admin"),
+                    InlineKeyboardButton("𝙰𝚋𝚘𝚞𝚝 🤠", callback_data="about")
                 ]
                 ]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -284,12 +284,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('💬 Channel', url='https://t.me/GD_FILMCLUB'),
-                    InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest')
+                    InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/GD_FILMCLUB'),
+                    InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest')
                 ],
                 [
-                    InlineKeyboardButton("🤔Help", callback_data="help"),
-                    InlineKeyboardButton("🧑‍💻 My Boss", url="https://t.me/sachin_official_admin"),
+                    InlineKeyboardButton("🤔 𝙷𝚎𝚕𝚙", callback_data="help"),
+                    InlineKeyboardButton("🧑‍💻 𝙼𝚢 𝙱𝚘𝚜𝚜", url="https://t.me/sachin_official_admin"),
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -312,7 +312,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🗣️ Group', url=f'https://t.me/KicchaRequest')
+                        InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest')
                     ]
                     ]
                 
@@ -343,7 +343,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🗣️Group', url=f'https://t.me/KicchaRequest')
+                        InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest')
                     ]
                     ]
                 
