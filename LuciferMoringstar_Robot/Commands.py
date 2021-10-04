@@ -45,14 +45,14 @@ async def start(bot, message):
                 ident, file_id = message.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=message.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**𝙿𝚕𝚎𝚊𝚜𝚎 𝙲𝚕𝚎𝚌𝚔 𝚃𝚑𝚒𝚜 𝙱𝚞𝚝𝚝𝚘𝚗 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝙰𝚗𝚍 𝙲𝚕𝚎𝚌𝚔 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙱𝚞𝚝𝚝𝚘𝚗 𝙰𝚗𝚍 𝚃𝚊𝚔𝚎 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙱𝚘𝚝...!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("🤖 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🤖", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -107,11 +107,11 @@ async def start(bot, message):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**𝙿𝚕𝚎𝚊𝚜𝚎 𝙲𝚕𝚎𝚌𝚔 𝚃𝚑𝚒𝚜 𝙱𝚞𝚝𝚝𝚘𝚗 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝙰𝚗𝚍 𝙲𝚕𝚎𝚌𝚔 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙱𝚞𝚝𝚝𝚘𝚗 𝙰𝚗𝚍 𝚃𝚊𝚔𝚎 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙱𝚘𝚝...!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("🤖 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🤖", url=invite_link.invite_link)
                     ]
                 ]
             )
