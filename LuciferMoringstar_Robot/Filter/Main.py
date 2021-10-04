@@ -29,7 +29,7 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**𝙿𝚕𝚎𝚊𝚜𝚎 𝙲𝚕𝚎𝚌𝚔 𝚃𝚑𝚒𝚜 𝙱𝚞𝚝𝚝𝚘𝚗 𝙹𝚘𝚒𝚗 𝙼𝚢 𝚄𝚙𝚍𝚊𝚝𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 𝙰𝚗𝚍 𝙲𝚕𝚎𝚌𝚔 𝚃𝚛𝚢 𝙰𝚐𝚊𝚒𝚗 𝙱𝚞𝚝𝚝𝚘𝚗 𝙰𝚗𝚍 𝚃𝚊𝚔𝚎 𝚈𝚘𝚞𝚛 𝚁𝚎𝚚𝚞𝚎𝚜𝚝 𝙼𝚘𝚟𝚒𝚎 𝚄𝚜𝚎 𝚃𝚑𝚒𝚜 𝙱𝚘𝚝...!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n \n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n\n\n   **📤 Uploaded by {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -114,7 +114,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ Title:-** {search}\n**⭐ Rating:-** {random.choice(RATING)}\n**🎭 Genre:-** {random.choice(GENRES)}\n\n\n**📤 Uploaded by:- {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
