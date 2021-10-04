@@ -123,6 +123,8 @@ async def start(bot, message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [[
+                InlineKeyboardButton("🎙  Add Me To Your Group ➕", url="https://t.me/Rocky_autofilterBOT?startgroup=true"),
+                ],[
                 InlineKeyboardButton("🗣️ 𝙶𝚛𝚘𝚞𝚙", url="https://t.me/KicchaRequest"),
                 InlineKeyboardButton("💻 𝙲𝚘𝚕𝚕𝚎𝚌𝚝𝚒𝚘𝚗", url="https://t.me/KR_ROCKERS_DVD_WEB_OTT_MOVIES")
                 ],[
