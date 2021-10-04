@@ -20,7 +20,7 @@ class Bot(Client):
             api_hash=API_HASH,
             bot_token=BOT_TOKEN,
             workers=50,
-            plugins={"root": "Allu_ArjunROBOTv3"},
+            plugins={"root": "LuciferMoringstar_Robot"},
             sleep_threshold=5,
         )
 
