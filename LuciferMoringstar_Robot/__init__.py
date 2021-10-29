@@ -8,6 +8,7 @@ from .Utils import (
 from .Channel import (
    RATING,
    GENRES
+   RELEASE_INFO
 )
 
 HELP = """
