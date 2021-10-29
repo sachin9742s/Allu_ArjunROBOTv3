@@ -7,7 +7,7 @@ from .Utils import (
 )
 from .Channel import (
    RATING,
-   GENRES
+   GENRES,
    RELEASE_INFO
 )
 
