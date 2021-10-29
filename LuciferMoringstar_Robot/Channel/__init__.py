@@ -3,5 +3,6 @@ from .Log_Channel import (
 )
 from .Index import (
    RATING,
-   GENRES
+   GENRES,
+   RELEASE_INFO
 )
