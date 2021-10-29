@@ -160,7 +160,7 @@ async def group(client, message):
 
         buttons.append(
             [InlineKeyboardButton(text="≫ 𝑵𝒆𝒙𝒕 𝑷𝒂𝒈𝒆 ≫",callback_data=f"next_0_{keyword}"),
-             InlineKeyboardButton(text=f"🎶 𝙿𝚊𝚐𝚎𝚜 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"🎶 𝙿𝚊𝚐𝚎𝚜 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
