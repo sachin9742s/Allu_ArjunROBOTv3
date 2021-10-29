@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n\n\n   **📤 Uploaded by {message.chat.title}\n **👤 Requested By:** {mention}"
+        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n\n\n   **📤 Uploaded by {message.chat.title}\n **👤 Requested By:** {mention}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -114,7 +114,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:-** {search}\n**⭐ Rating:-** {random.choice(RATING)}\n**🎭 Genre:-** {random.choice(GENRES)}\n\n\n**📤 Uploaded by:- {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ Title:-** {search}\n**⭐ Rating:-** {random.choice(RATING)}\n**🎭 Genre:-** {random.choice(GENRES)}\n\n\n**📤 Uploaded by:- {message.chat.title}\n **👤 Requested By:** {mention}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -247,7 +247,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
                 buttons.append(
                     [InlineKeyboardButton("≫ 𝑵𝒆𝒙𝒕 𝑷𝒂𝒈𝒆 ≫", callback_data=f"next_{int(index)-1}_{keyword}")]
-                    [InlineKeyboardButton(f"🎶 𝙿𝚊𝚐𝚎𝚜 {int(index)}/{data['total']}", callback_data="pages")]
+                     InlineKeyboardButton(f"🎶 𝙿𝚊𝚐𝚎𝚜 {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -271,7 +271,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "help":
             buttons = [
                 [
-                    InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/GD_FILMCLUB'),
+                    InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/gd_film'),
                     InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest')
                 ],
                 [
@@ -284,7 +284,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/GD_FILMCLUB'),
+                    InlineKeyboardButton('💬 𝙲𝚑𝚊𝚗𝚗𝚎𝚕', url='https://t.me/gd_film'),
                     InlineKeyboardButton('🗣️ 𝙶𝚛𝚘𝚞𝚙', url=f'https://t.me/KicchaRequest')
                 ],
                 [
