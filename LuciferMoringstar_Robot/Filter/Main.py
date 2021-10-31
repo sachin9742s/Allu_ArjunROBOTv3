@@ -123,11 +123,10 @@ async def group(client, message):
         files = await get_filter_results(query=search)
         if files:
             for file in files:
-                file_id = file.file_id
                 filename = f"{file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}", url=f"https://telegram.dog/{nyva}?Start=pr0fess0r_99_-_-_-_"),
-                     InlineKeyboardButton(url=f"https://telegram.dog/{nyva}?Start=pr0fess0r_99_-_-_-_")]
+                     InlineKeyboardButton(text=f"[{get_size(file.file_size)}]", url=f"https://telegram.dog/{nyva}?Start=pr0fess0r_99_-_-_-_")]
                 )
         else:
             return
